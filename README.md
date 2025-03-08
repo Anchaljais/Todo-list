@@ -5,9 +5,10 @@ A responsive and feature-rich To-Do application built with React, designed to he
 
 Demo
 [Screenshot 2025-03-09 030115](https://github.com/user-attachments/assets/0c5fdcd9-a19d-4268-bb4d-3c3207f689e2)
-![App Demo](./MAIN-PROJECT/PROJECT/src/demo.gif)
 
 
+
+![demo gif](https://github.com/user-attachments/assets/3ad67967-b38c-4b46-b697-3ee5b1582da7)
 
 Features
 Task Management: Add, delete, and mark tasks as completed.
