@@ -1,0 +1,244 @@
+/* Sidebar.css */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home.dark-mode {
+    background: rgba(36, 36, 36, 1);
+    color: #fff;
+}
+
+.sidebar1 {
+    margin-top: -95px;
+    width: 280px;
+    height: 850px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(238, 246, 239, 1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar1.dark-mode {
+    background: rgba(44, 44, 44, 1);
+    color: #fff;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: -1px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.profile img {
+    width: 118px !important;
+    height: 118px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    position: relative;
+    z-index: 11;
+}
+
+.home.dark-mode .profile h1 {
+    color: #fff;
+}
+
+.menu-container {
+    width: 240px;
+    height: 248px;
+    margin-bottom: 20px;
+    background: rgba(251, 253, 252, 1);
+    margin-top: 80px;
+    margin-bottom: 10px;
+    gap: 9px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar1.dark-mode .menu-container {
+    background: rgba(35, 35, 35, 1);
+    color: #fff;
+}
+
+.menu-list {
+    list-style: none;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+.sidebar1.dark-mode .menu-list li {
+    color: #fff;
+}
+
+.menu-list li:hover {
+    background: rgba(53, 121, 55, 0.16);
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    transition: 0.5s;
+    transform: none;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.add-list-container {
+    width: 240px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(251, 253, 252, 1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar1.dark-mode .add-list-container {
+    background: rgba(35, 35, 35, 1);
+    color: #fff;
+}
+
+.add-list-btn {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    color: #000;
+    background:none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar1.dark-mode .add-list-btn {
+    background:none;
+    color: #fff;
+}
+
+.add-icon {
+    margin-right: 10px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 270px;
+    background: rgba(251, 253, 252, 1);
+    box-shadow: 0px 1.33px 6.65px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar1.dark-mode .progress-container {
+background: rgba(35, 35, 35, 1);
+    color: #fff;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .sidebar1 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .add-list-container {
+        width: 100%;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar1 {
+        padding: 10px;
+    }
+
+    .profile img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .profile h1 {
+        font-size: 16px;
+    }
+
+    .menu-list li {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .add-list-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar1 {
+        padding: 8px;
+    }
+
+    .profile img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .profile h1 {
+        font-size: 14px;
+    }
+
+    .menu-list li {
+        margin: 8px;
+        font-size: 12px;
+    }
+
+    .add-list-btn {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,373 @@
+/* Content.css */
+.content-container {
+    width: 1020px;
+    height: 904px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.content-container.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: linear-gradient(358.24deg, rgba(53, 121, 55, 0.1) 1.27%, rgba(208, 255, 210, 0.1) 98.29%);
+}
+
+.content-header h1 {
+
+    color: #333;
+    font-family: Outfit;
+    font-family: Outfit;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0%;
+}
+
+.content-container.dark-mode .content-header h1 {
+    color: #fff;
+}
+
+.dropdown-btn {
+    padding: 4px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.task-input-section {
+   
+    border-top: 1.5px solid rgba(73, 110, 75, 0.2);
+    background: rgba(47, 54, 48, 1);
+    margin-bottom: 20px;
+    background: linear-gradient(0deg, rgba(53, 121, 55, 0.1) 0%, rgba(208, 255, 210, 0.1) 100%);
+}
+
+.task-input-div  {
+    width: 928px;
+    height: 178px;
+    gap: 48px;
+    padding-top: 42px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background: linear-gradient(358.24deg, rgba(53, 121, 55, 0.1) 1.27%, rgba(208, 255, 210, 0.1) 98.29%);
+    
+    color: #333;
+}
+
+.content-container.dark-mode .task-input-div input {
+    background-color: #444;
+    color: #fff;
+}
+
+.task-buttons {
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: space-around;
+    color:green;
+}
+
+.content-container.dark-mode .icon-btn {
+    color: #fff;
+}
+
+.add-task-btn {
+    margin-left: 680px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background: hsl(122, 39%, 34%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgba(84, 203, 88, 0.16);
+    font-weight: 500;
+}
+
+.add-task-btn:hover {
+    background: rgba(57, 125, 59, 0.99);
+}
+
+.task-list,
+.completed-tasks {
+    margin-bottom: 20px;
+    font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+        font-family: outfit;
+}
+
+.task-list h2,
+.completed-tasks h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: outfit;
+}
+
+.content-container.dark-mode .task-list h2,
+.content-container.dark-mode .completed-tasks h2 {
+    color: #fff;
+}
+
+.task-item {
+ 
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 8px;
+    background: rgba(251, 253, 252, 1);
+}
+
+.content-container.dark-mode .task-item {
+    background:none;
+    border: none;
+    color: #fff;
+}
+
+.task-item.completed {
+    background:none ;
+}
+
+.content-container.dark-mode .task-item.completed {
+    
+    background:none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+    font-family: outfit;
+    font-weight: 400;
+   
+}
+.completed-tasks{
+    margin-top: 15px;
+    font-weight: 600;
+}
+.completed-text {
+    text-decoration: line-through;
+    color: #070707;
+    font-weight: 500;
+}
+.content-container.dark-mode .completed-text{
+    color: #ccc;
+}
+
+.check-icon {
+    margin-right: 10px;
+    color: #2cd132;
+}
+
+/* Slider Styles */
+.slider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 452px;
+    height: 964px;
+    background: rgba(73, 110, 75, 0.2);
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+
+}
+
+.slider-content {
+    margin-top: 30px;
+    padding: 20px;
+    
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slider-header h3 {
+    font-size: 20px;
+    color: #212121;
+    font-weight: bold;
+}
+
+.slider-table {
+    font-size: ;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.table-column2{
+    margin-top: 500px;
+    margin-left: 174px;
+    display: flex;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight:400;
+    font-style: outline;
+    background-color: #dfdede;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(249, 246, 246, 0.1);
+}
+
+.step-item input[type="checkbox"] {
+    margin-right: 8px;
+  
+}
+
+.add-step {
+    margin-left: -215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+
+}
+
+.add-step input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+.add-step button {
+    margin-right:90px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #151616;
+    font-family:outfit;
+
+}
+
+.icon-btn {
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0a0a0a;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    font-weight: 400;
+}
+
+
+.icon-btn span {
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-left: 8px;
+    font-family: outfit;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .content-container {
+        padding: 16px;
+    }
+
+    .task-input-div {
+        padding: 16px;
+    }
+
+    .task-buttons {
+        margin-top: 48px;
+    }
+
+    .add-task-btn {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px;
+    }
+
+    .task-input-div {
+        padding: 10px;
+    }
+
+    .task-buttons {
+        margin-top: 24px;
+    }
+
+    .add-task-btn {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        padding: 8px;
+    }
+
+    .task-input-div {
+        padding: 8px;
+    }
+
+    .task-buttons {
+        margin-top: 16px;
+    }
+
+    .add-task-btn {
+        margin-left: auto;
+    }
+}
