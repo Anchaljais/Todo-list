@@ -5,7 +5,7 @@ A responsive and feature-rich To-Do application built with React, designed to he
 
 Demo
 [Screenshot 2025-03-09 030115](https://github.com/user-attachments/assets/0c5fdcd9-a19d-4268-bb4d-3c3207f689e2)
-[App Demo](../MAIN-PROJECT/PROJECT/src/demo.gif)
+![App Demo](./MAIN-PROJECT/PROJECT/src/demo.gif)
 
 
 
